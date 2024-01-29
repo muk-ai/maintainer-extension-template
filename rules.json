@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "Is-Maintainer",
+          "operation": "set",
+          "value": "true"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "https://api.example.com/*",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  }
+]
+
